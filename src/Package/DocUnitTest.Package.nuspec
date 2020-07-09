@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package  xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>    
+    <id>DocUnitTest.Package</id>
+    <version>0.0.1</version>
+    <title></title>
+    <authors>Microsoft</authors>
+    <owners></owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Q# compiler extension that turns code snippets in API docs into unit tests.</description>
+    <releaseNotes></releaseNotes>
+    <copyright></copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="Microsoft.Quantum.Compiler" version="0.11.2006.1905-beta" />
+    </dependencies>
+    <summary></summary>
+  </metadata>
+  <files>
+    <file src="DocUnitTest.props" target="build\DocUnitTest.Package.props" />
+    <file src="bin\$Configuration$\**\*.dll" exclude="bin\$Configuration$\**\DocUnitTest.Package.dll" target="lib" />
+  </files>
+</package>

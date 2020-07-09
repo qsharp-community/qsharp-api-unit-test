@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.Quantum.Sdk/0.11.2006.2118-beta">
+﻿<Project Sdk="Microsoft.Quantum.Sdk/0.11.2006.1905-beta">
 
   <PropertyGroup>
     <QscVerbosity>Detailed</QscVerbosity>
@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\DocUnitTest.csproj" IsQscReference="true" Priority="0" />
+    <PackageReference Include="DocUnitTest.Package" Version="0.0.1" IsQscReference="true" />
   </ItemGroup>
 
   <ItemGroup>
